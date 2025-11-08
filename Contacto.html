@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ingeniería del Siglo XXI</title>
+
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="menu">
+        <div class="menu-content container">
+            <a href="index.html" class="logo">SIGLO XXI</a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="avances.html">Avances</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+   <section class="contact section-page">
+    <div class="container section-title">
+        <h2>Conecta con Nosotros</h2>
+        <p>¿Tienes preguntas o sugerencias? Escríbenos.</p>
+    </div>
+
+    <div class="container contact-grid">
+
+        <div class="contact-box left">
+            <h3>Autores:</h3>
+            <ul>
+                <li>Valentina Rodriguez Leiva</li>
+                <li>Juan Andres Cedeño Tello</li>
+                <li>David Felipe Trujillo Perdomo</li>
+                <li>Andrea sanchez</li>
+            </ul>
+        </div>
+
+        <div class="contact-box right">
+            <h3>Envíanos un mensaje:</h3>
+
+<form action="https://formspree.io/f/xeovjobo" method="POST" class="contact-form">
+    <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+    <input type="email" name="Correo" placeholder="Tu Email" required>
+    <textarea name="Mensaje" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+
+    <label class="rating-label">Califica tu experiencia:</label>
+
+<div class="rating">
+        <input type="radio" id="rate5" name="rating" value="5">
+        <label for="rate5" title="5 estrellas">⭐</label>
+
+        <input type="radio" id="rate4" name="rating" value="4">
+        <label for="rate4" title="4 estrellas">⭐</label>
+
+        <input type="radio" id="rate3" name="rating" value="3">
+        <label for="rate3" title="3 estrellas">⭐</label>
+
+        <input type="radio" id="rate2" name="rating" value="2">
+        <label for="rate2" title="2 estrellas">⭐</label>
+
+        <input type="radio" id="rate1" name="rating" value="1">
+        <label for="rate1" title="1 estrella">⭐</label>
+
+    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+</form>
+        </div>
+
+    </div>
+</section>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p class="quote">"El ingrediente más importante es levantarte y hacer algo." - Nolan Bushnell</p>
+        <div class="footer-links">
+            <span>SIGLO XXI Project</span> | <a href="contacto.html">Contacto</a>
+        </div>
+        <p>𓆩2025 Universidad Surcolombiana | Explorando la ingeniería del siglo XXI𓆪</p>
+    </div>
+</footer>
+
+<!-- ✅ Script solo si manejas móvil -->
+<script>
+const toggle = document.getElementById('menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+toggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
