@@ -229,6 +229,13 @@
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Asegúrate de que este script maneje la lógica del modal y el menú -->
+    <script>
+const toggle = document.getElementById('menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+toggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+</script>
 </body>
 </html>
