@@ -193,10 +193,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 }); // DOMContentLoaded end
 
-
-const menuToggle = document.getElementById("menu-toggle");
-const navbarList = document.querySelector(".navbar ul");
-
-menuToggle.addEventListener("click", () => {
-    navbarList.classList.toggle("open");
-});
